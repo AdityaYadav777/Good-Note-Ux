@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_marginStart="7dp"
+    android:layout_marginEnd="7dp"
+    android:layout_marginTop="5dp"
+android:background="@color/white"
+    app:cardCornerRadius="17dp"
+    android:layout_height="160dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout"
+        android:background="@color/white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/shape_priority"
+            android:layout_alignParentEnd="true"
+          android:layout_marginEnd="10dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/myPreority"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/myDate"
+            android:fontFamily="monospace"
+            android:textColor="#838080"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginBottom="2dp"
+           android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:text="Mon 20 22"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:focusedByDefault="true"
+     android:background="@drawable/shape_for_edittext"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hii Mai Hu Don"
+            android:layout_margin="10dp"
+            android:maxLines="1"
+            android:paddingEnd="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed-light"
+            android:id="@+id/textTitle"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:maxLines="3"
+            android:textColor="@color/blue"
+            android:text="wefbwhfbwebfhbwehwe87f806f068f68f6f67fg67f67fg6fgy8g8g8fhjherufguerfgiegbregfuerfbievuybeyvbbfhwebhvbhwebvhbwehvbhebwhvbhwebvhbwehvbhwebh"
+            android:id="@+id/textData"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

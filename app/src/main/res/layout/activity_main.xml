@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:id="@+id/ll">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here is some 256 task"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:layout_marginTop="7dp"
+        android:id="@+id/pendingTaskText"/>
+
+</LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+     android:columnCount="4"
+        android:layout_centerInParent="true"
+        android:id="@+id/flt"
+ android:rowCount="1"
+
+        android:layout_below="@+id/ll">
+
+        <Button
+            android:id="@+id/allBtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="#99D9F3F3"
+            android:textColor="@color/blue"
+            android:text="All"/>
+
+        <Button
+            android:id="@+id/lowBtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#991DF116"
+            android:textColor="@color/black"
+            android:text="Low"/>
+        <Button
+            android:id="@+id/mediumBtn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#99F4F43F"
+            android:textColor="@color/black"
+            android:text="Medium"/>
+
+        <Button
+            android:id="@+id/highBtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#99DF2D57"
+            android:textColor="@color/white"
+            android:text="High"/>
+
+    </GridLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        android:id="@+id/emptyImg"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRec"
+        android:layout_below="@+id/flt"
+        tools:listitem="@layout/item_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+<com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+    android:layout_width="55dp"
+    android:layout_height="55dp"
+    android:backgroundTint="#89BFF8"
+    android:text="+"
+    android:id="@+id/addBnt"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:textSize="22sp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_margin="30dp"/>
+
+
+
+
+</RelativeLayout>
