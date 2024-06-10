@@ -32,6 +32,16 @@
 </ul>
 <img src="https://github.com/AdityaYadav777/Good-Note-Ux/assets/97823134/6d4c1e5f-0acd-4a80-acb1-eb8f9675ff66" width="350" height="650">
 
+<hr>
+
+<ul>
+  <li>
+    <h1> Edit And Delete Data </h1>
+  </li>
+</ul>
+<img src="https://github.com/AdityaYadav777/Good-Note-Ux/assets/97823134/29a50eb8-3d1c-4266-a2cc-a9e344c64694 " width="350" height="650">
+
+
 
 
 
